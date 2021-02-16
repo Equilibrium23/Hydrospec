@@ -114,6 +114,13 @@ header.smaller {
     text-align: center;
     outline: none;
 }
+#elo{
+    border: 10px solid yellow;
+}
+#section-portfolio{
+    border: 10 px solid yellow im !important;
+    height: max-content;
+}
 
 #mainmenu li a:after {
     float: right;
