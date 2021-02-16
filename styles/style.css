@@ -17,7 +17,6 @@ body {
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 500;
-    background: #fff;
     line-height: 1.8em;
     padding: 0;
     display: none;
@@ -140,6 +139,25 @@ header.smaller {
     z-index: 100;
 }
 
+#home{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.contactHeader{
+    color:#fff;
+}
+.contactList li{
+    font-size: 25px;
+}
+#svg1{
+float: left;
+padding-left: 20%;
+}
+#svg2{
+float: left;
+padding-left: 40%;
+}
 /* section */
 /* ================================================== */
 section {
@@ -155,7 +173,23 @@ section {
 .full-height {
     overflow: hidden !important;
 }
-
+img{
+    background-color:transparent;
+}
+.container #about{
+    font-size: 25px;
+    text-align: center;
+}
+.servicesHeader{
+    color: #fff ;
+}
+#services{
+    padding-left: 40%;
+}
+.servicesList {
+    color: #fff ;
+    font-size: 25px;
+}
 /* counter */
 /* ------------------------------ */
 .de_count {
