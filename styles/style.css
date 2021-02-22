@@ -44,15 +44,28 @@ header.transparent {
     background: rgba(0, 0, 0, 0.0);
 }
 
-header div#logo {
+#mainLogo{
+    font-size: 70px;
+    font-weight: 400;
     padding-top: 30px;
+    float: left;
+
+}
+#additionalLogo {
+    padding-left: 1vw;
+    float: left;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+header div#logo {
+    left: -30%;
     width: fit-content;
     height: fit-content;
 	position:absolute;
     font-family: "Oswald", sans-serif;
-    font-size: 70px;
     color: white;
-    font-weight: 400;
 }
 
 header nav {
