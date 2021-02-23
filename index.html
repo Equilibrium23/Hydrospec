@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/slides.css" type="text/css">
     <link rel="stylesheet" href="styles/colors/red.css" type="text/css">
+    <link rel="stylesheet" href="styles/buttons.css" type="text/css">
 </head>
 
 <body id="homepage">
@@ -29,9 +30,9 @@
                     
                     <nav>
                         <ul id="mainmenu">
-                            <li><a href="#section-home">Start</a></li>
-                            <li><a href="#section-about">O nas</a></li>
+                            <li><a href="#section-home">O nas</a></li>
                             <li><a href="#section-services">Usługi</a></li>
+                            <li><a href="#section-covid">Covid</a></li>
                             <li><a href="#section-contact">Kontakt</a></li>
                             <li><a href="galery.html" target="blank">Galeria</a></li>
                         </ul>
@@ -45,71 +46,43 @@
             <section id="section-home" class="full-height relative bg-color text-light no-top no-bottom" data-stellar-background-ratio=".2">
                 <div id="home" class ="full-height">
                     <div id = "container">
-                        <ul class = "contactList">
-                            <h1 class ="contactHeader">Kontakt:</h1>
-                            <li>Telefon: 512 369 119</li>
-                            <li>Mail: jeszcze nie założyłem, potem Ci podam</li>
-                        </ul>
-                        <div id ="svg1">
-                            <a href="https://www.facebook.com/hydrospeckr/" target="blank">
-                                <img src="images/fb.svg" alt="" width="50px" height="50px">
-                            </a>
-                        </div>
-                        <div id ="svg2">
-                            <a href="https://www.instagram.com/hydrospeckrakow/" target="blank">
-                                <img src="images/instagram.svg" alt="" width="50px" height="50px">
-                            </a>
+                        <p id="about">
+                            Świadczymy usługi hydrauliczne i gazownicze na terenie Krakowa i okolic od 2012 roku. <br>
+                            Nasi pracownicy to wyspecjalizowani fachowcy z wieloletnim stażem oraz specjalistyczną wiedzą.<br>
+                            Potrzebujesz pomocy? Kliknij w przycisk poniżej, aby skontaktować się z nami.<br>
+                            Jeśli nie posiadasz dostępu do telefonu, możesz skontaktować się z nami przez narzędzie komunikacyjne.<br>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
+                                <div class="de_count">
+                                    <h3 class="timer" data-to="10" data-speed="1000">0</h3>
+                                    <span>Lat na rynku</span>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
+                                <div class="de_count">
+                                    <h3>2000+</h3>
+                                    <span>Zadowolonych Klientów</span>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
+                                <div class="de_count">
+                                    <h3>3000+</h3>
+                                    <span>Wykonanych zleceń</span>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
+                                <div class="de_count">
+                                    <h3 class="timer" data-to="15" data-speed="1000">0</h3>
+                                    <span>Lat w zawodzie</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>  
-            </section>
-
-            <!-- section begin -->
-            <section id="section-about" data-bgcolor="#212121">
-                <div class="container">
-                    <p id="about">
-                        Świadczymy usługi hydrauliczne i gazownicze na terenie Krakowa i okolic od 2012 roku. <br>
-                        Nasi pracownicy to wyspecjalizowani fachowcy z wieloletnim stażem oraz specjalistyczną wiedzą.<br>
-                        Potrzebujesz pomocy? Kliknij w przycisk poniżej, aby skontaktować się z nami.<br>
-                        Jeśli nie posiadasz dostępu do telefonu, możesz skontaktować się z nami przez narzędzie komunikacyjne.<br>
-                    </p>
-                </div>
-            </section>
-            <!-- section close -->
-
-            <!-- section begin -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                            <div class="de_count">
-                                <h3 class="timer" data-to="8240" data-speed="2500">0</h3>
-                                <span>Przepracowane godziny</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                            <div class="de_count">
-                                <h3 class="timer" data-to="315">0</h3>
-                                <span>Wykonane projekty</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                            <div class="de_count">
-                                <h3 class="timer" data-to="250">0</h3>
-                                <span>Zadowolonych klientów</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                            <div class="de_count">
-                                <h3 class="timer" data-to="32" data-speed="2500">0</h3>
-                                <span>Lata w zawodzie</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
             <!-- section close -->
 
@@ -156,9 +129,38 @@
 
             <!-- section begin -->
             <section id="section-contact" class="bg-color">
-                <div class="container">
-                    <h1>kontakt</h1>
-                </div>
+                    <div id = "mainContact">
+                        <ul class = "contactList">
+                            <h2 class ="contactHeader">Skontakuj się z nami:</h2>
+                            <li>Telefon: 512 369 119</li>
+                            <li>Mail: jeszcze nie założyłem, potem Ci podam</li>
+                            <br>
+                            <h2 class ="contactHeader">Jesteśmy w social mediach:</h2>
+                            <div id ="svg1">
+                                <a href="https://www.facebook.com/hydrospeckr/" target="blank">
+                                    <img src="images/fb.svg" alt="" width="50px" height="50px">
+                                </a>
+                            </div>
+                            <div id ="svg2">
+                                <a href="https://www.instagram.com/hydrospeckrakow/" target="blank">
+                                    <img src="images/instagram.svg" alt="" width="50px" height="50px">
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id = "mailContact">
+                        <form>
+                            <input type="text" name="clientName" placeholder="Twoje imie i nazwisko*"><br>
+                            <input type="text" name="clientMail" placeholder="Twój Mail*"><br>
+                            <input type="text" name="clientTel" placeholder="Twój nr. Tel"><br>
+                            <textarea placeholder="Tutaj wpisz treść maila" class="form-control" id="exampleFormControlTextarea1" rows="5" name="mailText"></textarea><br>
+                        </form>
+                        <div id = "submitMail">
+                            <button type="button" class="btn btn-outline-primary" onclick="sendMail()">Wyślij</button>
+                        </div>
+                    </div>
+                    
+                    
             </section>
             <!-- section close -->
 
@@ -182,5 +184,6 @@
         <script src="scripts/jquery.magnific-popup.min.js"></script>
         <script src="scripts/designesia.js"></script>
         <script src="scripts/slides.js"></script>
+        <script src="scripts/mailHandler.js"></script>
 </body>
 </html>
