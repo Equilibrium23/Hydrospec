@@ -129,7 +129,6 @@ header.smaller {
     list-style: none;
     position: relative;
 }
-
 #mainmenu a {
     display: inline-block;
     padding: 30px 0px 30px 20px;
@@ -138,9 +137,6 @@ header.smaller {
     color: #fff;
     text-align: center;
     outline: none;
-}
-#elo{
-    border: 10px solid yellow;
 }
 #section-portfolio{
     border: 10 px solid yellow im !important;
@@ -360,7 +356,6 @@ video{
 
 .video-container {
     position: relative;
-    height: 0;
 }
 
 /* transition */
