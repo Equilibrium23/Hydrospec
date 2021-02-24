@@ -45,6 +45,17 @@ header.transparent {
     background: rgba(0, 0, 0, 0.0);
 }
 
+
+#logoPicture{
+    float: left;
+}
+#logoPicture img{
+    padding-top: 5px;
+    border-radius: 10vw;
+
+    width:7vw; /* you can use % */
+    height: auto;
+}
 #mainLogo{
     font-size: 70px;
     font-weight: 400;
@@ -198,7 +209,10 @@ header.smaller {
     padding-left: 5%;
     float: left;
 }
-
+#svgCovid{
+    padding-left: 5%;
+    float: left;
+}
 /* section contact */
 #mainContact{
     padding-left: 5%;
@@ -215,7 +229,8 @@ header.smaller {
 #covidInfo{
     font-size: 35px;
     line-height: 1.4;
-    text-align: center;
+    padding-left: 20%;
+    /* text-align: center; */
     color:#fff;  
 }
 
@@ -345,8 +360,6 @@ video{
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
     height: 0;
 }
 

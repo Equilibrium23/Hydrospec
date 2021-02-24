@@ -4,10 +4,7 @@ section.bg-color,
 {
     background:linear-gradient(to right,#2c69db,#3293e2, #3293e2,#3293e2, #2c69db);
 }
-section.bg-color2
-{
-    background:linear-gradient(to top,#2c69db,#3293e2, #2c69db);
-}
+
 #mainmenu li:hover>ul,
 #mainmenu li:hover>a,
 #mainmenu a:hover,
