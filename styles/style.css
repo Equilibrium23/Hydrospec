@@ -6,7 +6,7 @@
 @import url("../fonts/elegant_font/HTML_CSS/style.css");
 @import url("../fonts/et-line-font/style.css");
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     overflow: auto !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -190,11 +190,12 @@ header.smaller {
 }
 
 #svgFb{
-    padding-left: 5%;
+    padding-left: 20%;
     float: left;
+    
 }
 #svgInst{
-    padding-left: 20%;
+    padding-left: 5%;
     float: left;
 }
 
@@ -234,6 +235,10 @@ textarea {
     text-align: center;
 }
 
+.btn{
+    font-family: "Arial Bold", Gadget, sans-serif;
+    font-weight: 700 !important;
+}
 
 
 
