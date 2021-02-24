@@ -90,6 +90,21 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <br>
+                        <div id = "contactIcons">
+                            <div id ="svgPhone">
+                                <a href="#section-contact">
+                                    <img src="images/phone.svg" alt="" width="200px" height="200px">
+                                </a>
+                            </div>
+                            <div id ="svgMail">
+                                <a href="#section-contact">
+                                    <img src="images/mail.svg" alt="" width="200px" height="200px">
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>  
             </section>
@@ -136,23 +151,33 @@
             </section>
             <!-- section close -->
 
+            <section id="section-covid" class="bg-color">
+                <div id = "container">
+                    <p id = "covidInfo">
+                        W czasie epidemi koronawirusa nie boimy się podejmowania pracy, zachowując przy nich wszelkie środki ostrożności zalecane
+                        przez GIS. Dezynfekujemy swój sprzęt po każdym wykonanym zleceniu oraz zasłaniamy swój nos oraz usta przy użyciu maseczki.
+                        Jeśli chcesz uzyskać więcej informacji, skontaktuj się z nami.
+                    </p>
+                </div>
+           </section>
+
             <!-- section begin -->
             <section id="section-contact" class="bg-color">
                     <div id = "mainContact">
                         <ul class = "contactList">
                             <h2 class ="contactHeader">Skontakuj się z nami:</h2>
                             <li>Telefon: 512 369 119</li>
-                            <li>Mail: jeszcze nie założyłem, potem Ci podam</li>
+                            <li>Mail: hydrospeckr@gmail.com</li>
                             <br>
-                            <h2 class ="contactHeader">Jesteśmy w social mediach:</h2>
-                            <div id ="svg1">
+                            <h2 class ="contactHeader">Jesteśmy w social mediach:</h2><br>
+                            <div id ="svgFb">
                                 <a href="https://www.facebook.com/hydrospeckr/" target="blank">
-                                    <img src="images/fb.svg" alt="" width="50px" height="50px">
+                                    <img src="images/fb.svg" alt="" width="200px" height="200px">
                                 </a>
                             </div>
-                            <div id ="svg2">
+                            <div id ="svgInst">
                                 <a href="https://www.instagram.com/hydrospeckrakow/" target="blank">
-                                    <img src="images/instagram.svg" alt="" width="50px" height="50px">
+                                    <img src="images/instagram.svg" alt="" width="200px" height="200px">
                                 </a>
                             </div>
                         </ul>
@@ -168,7 +193,7 @@
                             <b class = "validator" id = "telValidator"></b>
                             <input type="text" name="clientTel" placeholder="Twój nr. Tel (oddzwonimy) "><br><br>
 
-                            <textarea placeholder="Tutaj wpisz treść maila" class="form-control" id="exampleFormControlTextarea1" rows="5" name="mailText"></textarea><br>
+                            <textarea placeholder="Tutaj wpisz treść maila" class="form-control" id="exampleFormControlTextarea1" rows="5" cols="10" name="mailText"></textarea><br>
                         </form>
                         <div id = "submitMail">
                             <button type="button" class="btn btn-primary" onclick="sendMail()">Wyślij</button>
