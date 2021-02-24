@@ -198,7 +198,13 @@ padding-left: 40%;
     text-align: center;
 }
 
-
+.validator{
+    font-size: 25px;
+    color:#fff;
+}
+#sendValidator{
+    text-align: center;
+}
 
 
 

@@ -1157,7 +1157,7 @@
 				
                 if (this.href.indexOf('#') != -1) {
                     var href = jQuery(this).attr('href');
-                    if (jQuery(window).scrollTop() > jQuery(href).offset().top - 140) {
+                    if (jQuery(window).scrollTop() > jQuery(href).offset.top - 140) {
                         jQuery('#mainmenu li a').removeClass('active');
                         jQuery(this).addClass('active');
                     }

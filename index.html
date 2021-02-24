@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="styles/slides.css" type="text/css">
     <link rel="stylesheet" href="styles/colors/red.css" type="text/css">
     <link rel="stylesheet" href="styles/buttons.css" type="text/css">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (
+        function() 
+        {
+            emailjs.init("user_tWEDpJaSTCTV2G2uGqa0E");
+        }
+    )();
+    </script>
 </head>
 
 <body id="homepage">
@@ -50,7 +59,7 @@
                             Świadczymy usługi hydrauliczne i gazownicze na terenie Krakowa i okolic od 2012 roku. <br>
                             Nasi pracownicy to wyspecjalizowani fachowcy z wieloletnim stażem oraz specjalistyczną wiedzą.<br>
                             Potrzebujesz pomocy? Kliknij w przycisk poniżej, aby skontaktować się z nami.<br>
-                            Jeśli nie posiadasz dostępu do telefonu, możesz skontaktować się z nami przez narzędzie komunikacyjne.<br>
+                            Jeśli nie posiadasz dostępu do telefonu, możesz skontaktować się przez narzędzie komunikacyjne.<br>
                         </p>
                         <div class="row">
                             <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
@@ -149,15 +158,23 @@
                         </ul>
                     </div>
                     <div id = "mailContact">
-                        <form>
-                            <input type="text" name="clientName" placeholder="Twoje imie i nazwisko*"><br>
-                            <input type="text" name="clientMail" placeholder="Twój Mail*"><br>
-                            <input type="text" name="clientTel" placeholder="Twój nr. Tel"><br>
+                        <form id ="mailForm">
+                            <b class = "validator" id = "nameValidator"></b>
+                            <input required type="text" name="clientName" placeholder="Twoje imie i nazwisko*"><br><br>
+
+                            <b class = "validator" id = "mailValidator"></b>
+                            <input required type="text" name="clientMail" placeholder="Twój Mail*"><br><br>
+
+                            <b class = "validator" id = "telValidator"></b>
+                            <input type="text" name="clientTel" placeholder="Twój nr. Tel (oddzwonimy) "><br><br>
+
                             <textarea placeholder="Tutaj wpisz treść maila" class="form-control" id="exampleFormControlTextarea1" rows="5" name="mailText"></textarea><br>
                         </form>
                         <div id = "submitMail">
-                            <button type="button" class="btn btn-outline-primary" onclick="sendMail()">Wyślij</button>
+                            <button type="button" class="btn btn-primary" onclick="sendMail()">Wyślij</button>
                         </div>
+                        <div class = "validator" id = "sendValidator"></div>
+                        
                     </div>
                     
                     
@@ -174,7 +191,6 @@
 
         <!-- Javascript Files ================================================== -->
         <script src="scripts/jquery.min.js"></script>
-        <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/easing.js"></script>
         <script src="scripts/jquery.isotope.min.js"></script>
         <script src="scripts/owl.carousel.js"></script>
@@ -183,6 +199,7 @@
         <script src="scripts/enquire.min.js"></script>
         <script src="scripts/jquery.magnific-popup.min.js"></script>
         <script src="scripts/designesia.js"></script>
+        <script src="scripts/jquery.stellar.min.js"></script>
         <script src="scripts/slides.js"></script>
         <script src="scripts/mailHandler.js"></script>
 </body>
