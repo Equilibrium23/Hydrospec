@@ -50,23 +50,27 @@ header.transparent {
     float: left;
 }
 #logoPicture img{
-    padding-top: 5px;
-    border-radius: 10vw;
-
-    width:7vw; /* you can use % */
+    padding-top: 1.5vh;
+    padding-right: 1vw;
+    height: 1vh;
+    width:140px;
     height: auto;
 }
+.vhtop{
+    padding-top: 20vh;
+}
+
 #mainLogo{
     font-family: 'Signika', sans-serif;
     font-size: 70px;
-    padding-top: 30px;
+    padding-top: 3.5vh;
     float: left;
 
 }
 #additionalLogo {
     padding-left: 1vw;
     float: left;
-    padding-top: 20px;
+    padding-top: 2vh;
     font-size: 25px;
     font-weight: 400;
     color: white;
@@ -119,8 +123,33 @@ header.smaller {
     float: right;
     font-size: 20px;
     font-weight: bold;
+    width: 100%;
+
+}
+#menu-btn {
+    display: none;
+    float: right;
+    margin-top: 5px;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
 }
 
+#menu-btn:before {
+    font-family: FontAwesome;
+    content: "\f0c9";
+    font-size: 24px;
+}
+
+#menu-btn:hover {
+    background: #fff;
+}
+
+#menu-btn:hover:before {
+    color: #222;
+}
 #mainmenu li {
     margin: 0px 0px;
     padding: 0px 0px;
@@ -163,7 +192,6 @@ header.smaller {
 #content {
     width: 100%;
     background: #fff;
-    padding: 90px 0 90px 0;
     z-index: 100;
 }
 
@@ -171,6 +199,7 @@ header.smaller {
     display: flex;
     justify-content: center; 
     align-items: center; 
+    height: fit-content;
 }
 .contactHeader{
     color:#fff;
@@ -267,17 +296,18 @@ section {
     -o-background-size: 100%;
     background-size: 100%;
 }
-.full-height {
-    overflow: hidden !important;
-}
+
 img{
     background-color:transparent;
 }
 #about{
     line-height: 1.4;
-    font-size: 35px;
+    font-size: 4vh;
     text-align: center;
-    padding-bottom:10vh ;
+    padding-bottom: 3vh;
+}
+#row{
+    padding-bottom: 1vh;
 }
 .servicesHeader{
     color: #fff ;
