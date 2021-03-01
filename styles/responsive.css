@@ -1,33 +1,34 @@
+@media only screen and (max-width:1640px) {
+    /* navbar */
+
+    /* end navbar */
+    #svgFb{
+        padding-left: 5%;
+    }
+}
+
 @media only screen and (max-width:1100px) {
     /* For mobile phones: */
+    #container{
+        text-align: center;
+    }
+    
+
+
+    /* contact */
     #mainContact, #mailContact{
       width:100%;
       padding-bottom: 7vw;
     }
+    /* end contact */
+
 }
+
+
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
     #svgFb, #svgInst{
         padding-left: 0%;
-    }
-}
-@media only screen and (max-width:1640px) {
-    /* For mobile phones: */
-    #svgFb{
-        padding-left: 5%;
-    }
-    header div#logo{
-        left: 0%;
-    }
-    #logo{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:1200px) {
-    /* For mobile phones: */
-    #additionalLogo{
-        display: inline;
     }
 }
 
@@ -37,100 +38,4 @@
         padding-left: 0%;
     }
     
-}
-
-
-
-
-
-
-@media only screen and (max-width: 992px) {
-    #menu-btn {
-        display: block;
-        position: relative;
-        float: right;
-    }
-    nav {
-        width: 100%;
-    }
-    #mainmenu {
-		margin-top:20px !important;
-        display: none;
-        float: none;
-        z-index: 200;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    #mainmenu a {
-        text-align: left;
-        padding-left: 0;
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-    }
-    #mainmenu li li a,
-    #mainmenu li li li a {
-        padding-left: 0;
-    }
-    #mainmenu a:hover {
-        background: #111 !important;
-    }
-    #mainmenu a:hover {
-        background: #111 !important;
-    }
-    #mainmenu li ul {
-        display: block;
-        position: inherit;
-        margin: 0;
-        width: 100%;
-    }
-    #mainmenu li {
-        border-bottom: solid 1px #eeeeee;
-        margin: 0;
-        width: 100%;
-        display: block;
-    }
-    #mainmenu li a:after {
-        display: none;
-    }
-    #mainmenu li:last-child {
-        margin-bottom: 30px;
-    }
-    #mainmenu li ul {
-        border-top: solid 1px #eeeeee;
-        top: auto;
-        width: auto;
-        height: auto;
-        position: inherit;
-        visibility: visible;
-        opacity: 1;
-    }
-    #mainmenu li ul a {
-        width: 100%;
-        background: none;
-        border: none;
-    }
-    #mainmenu li ul li {
-        border: none;
-        padding-left: 40px !important;
-    }
-    #mainmenu li ul li a {
-        display: block;
-    }
-    #mainmenu li ul li:last-child {
-        border-bottom: none;
-        margin: 0;
-    }
-    #mainmenu li ul li:last-child a {
-        border-bottom: none;
-    }
-    #mainmenu li a {
-        color: #212121;
-    }
-    #mainmenu li li a {
-        font-size: 10px;
-    }
-    #mainmenu li li a:hover {
-        color: #fff;
-    }
 }

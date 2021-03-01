@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    overflow: hidden;
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -30,6 +29,10 @@ body {
 	position:relative;
 }
 /*  header	*/
+
+/* navigation */
+/* ================================================== */
+
 header {
 	display:table-cell;
     width: 100%;
@@ -56,16 +59,12 @@ header.transparent {
     width:140px;
     height: auto;
 }
-.vhtop{
-    padding-top: 20vh;
-}
 
 #mainLogo{
     font-family: 'Signika', sans-serif;
     font-size: 70px;
     padding-top: 3.5vh;
     float: left;
-
 }
 #additionalLogo {
     padding-left: 1vw;
@@ -75,19 +74,20 @@ header.transparent {
     font-weight: 400;
     color: white;
 }
-header div#logo {
-    left: -30%;
-    width: fit-content;
-    height: fit-content;
-	position:absolute;
-    font-family: "Oswald", sans-serif;
-    color: white;
+
+.void{
+    clear: both;
 }
 
-header nav {
-    float: right;
-}
 
+#navbar{
+    float: left;
+}
+#menu-btn{
+    margin-top: 4vh;
+    float: left;
+    display: none;
+}
 header nav a {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -114,46 +114,16 @@ header.smaller {
 	-moz-box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.1);
 	box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.1);
 }
-
-/* navigation */
-/* ================================================== */
-
 #mainmenu {
     font-family: "Quicksand";
-    float: right;
     font-size: 20px;
     font-weight: bold;
     width: 100%;
 
 }
-#menu-btn {
-    display: none;
-    float: right;
-    margin-top: 5px;
-    width: 36px;
-    height: 36px;
-    padding: 6px;
-    text-align: center;
-    cursor: pointer;
-}
-
-#menu-btn:before {
-    font-family: FontAwesome;
-    content: "\f0c9";
-    font-size: 24px;
-}
-
-#menu-btn:hover {
-    background: #fff;
-}
-
-#menu-btn:hover:before {
-    color: #222;
-}
 #mainmenu li {
     margin: 0px 0px;
     padding: 0px 0px;
-    float: left;
     display: inline;
     list-style: none;
     position: relative;
@@ -166,10 +136,6 @@ header.smaller {
     color: #fff;
     text-align: center;
     outline: none;
-}
-#section-portfolio{
-    border: 10 px solid yellow im !important;
-    height: max-content;
 }
 
 #mainmenu li a:after {
@@ -188,7 +154,118 @@ header.smaller {
 }
 
 /* content */
+
+/* proba zrobienia navbara */
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+/* koniec proby */
+
+
+
+
+
 /* ================================================== */
+/* start page */
+#home{
+    padding-top: 20vh;
+}
+
+
+
+/* end start page */
+
+
+
+
+
 #content {
     width: 100%;
     background: #fff;
@@ -306,6 +383,8 @@ img{
     text-align: center;
     padding-bottom: 3vh;
 }
+
+
 #row{
     padding-bottom: 1vh;
 }
