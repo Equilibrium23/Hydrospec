@@ -9,11 +9,9 @@ $( document ).ready(function() {
 
   $( document ).ready(function() {
 	var win = $(window);
-	if (win.width() <= 820) {
 	   $('.modal-wrapper').toggleClass('open');
 	  $('.page-wrapper').toggleClass('blur-it');
 	   return false;
-	}
   });
 
 ((window, document, $, undefined) => {
