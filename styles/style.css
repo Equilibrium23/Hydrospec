@@ -163,12 +163,15 @@ header.smaller #mainmenu a {
     float: left;
 }
 /* section contact */
+.contactList li{
+    list-style: none; 
+}
 #mainContact{
     padding-left: 5%;
     width: 40%;
     float: left;
 }
-.contactList li{
+#mailx{
     overflow-x: auto;
 }
 #mailContact{
