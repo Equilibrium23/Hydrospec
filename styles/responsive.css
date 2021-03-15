@@ -43,6 +43,9 @@
     #svgMail{
         padding-right: 5%;
     }
+    #covidInfo{
+        padding-left: 5%;
+    }
 }
 
 @media only screen and (max-width:620px) {
