@@ -90,3 +90,11 @@
     }
     
 }
+
+
+@media only screen and (max-width:495px) {
+    #svgCovid{
+        text-align: center;
+        width: 100%;
+    }
+}

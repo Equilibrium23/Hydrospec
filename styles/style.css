@@ -168,7 +168,9 @@ header.smaller #mainmenu a {
     width: 40%;
     float: left;
 }
-
+.contactList li{
+    overflow-x: auto;
+}
 #mailContact{
     padding-left: 5%;
     padding-right: 10%;
