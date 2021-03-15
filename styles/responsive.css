@@ -25,7 +25,9 @@
         text-align: center;
     }
     
-
+    #mainContact{
+        padding-left: 0%;
+    }
 
     /* contact */
     #mainContact, #mailContact{
