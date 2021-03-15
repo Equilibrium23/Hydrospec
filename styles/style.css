@@ -41,7 +41,6 @@ header {
     top: 20px;
     left: 0;
     z-index: 1000;
-    background: #333333;
 }
 
 header.transparent {
@@ -53,7 +52,7 @@ header.transparent {
     float: left;
 }
 #logoPicture img{
-    padding-top: 1.5vh;
+    padding-top: 1vh;
     padding-right: 1vw;
     height: 1vh;
     width:140px;
@@ -62,8 +61,9 @@ header.transparent {
 
 #mainLogo{
     font-family: 'Signika', sans-serif;
+    color: white;
     font-size: 70px;
-    padding-top: 3.5vh;
+    padding-top: 3vh;
     float: left;
 }
 #additionalLogo {
@@ -80,9 +80,9 @@ header.transparent {
 }
 
 
-#navbar{
+/* #navbar{
     float: left;
-}
+} */
 #menu-btn{
     margin-top: 4vh;
     float: left;
@@ -102,154 +102,7 @@ header nav a:hover {
 
 header.smaller #mainmenu a {
     padding-top: 18px;
-    padding-bottom: 18px;
 }
-
-header.smaller {
-    height: 90px;
-    background: rgba(21, 21, 21, .95);
-    position: fixed;
-    top: 0px;
-	-webkit-box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.1);
-	-moz-box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.1);
-	box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.1);
-}
-#mainmenu {
-    font-family: "Quicksand";
-    font-size: 20px;
-    font-weight: bold;
-    width: 100%;
-
-}
-#mainmenu li {
-    margin: 0px 0px;
-    padding: 0px 0px;
-    display: inline;
-    list-style: none;
-    position: relative;
-}
-#mainmenu a {
-    display: inline-block;
-    padding: 30px 0px 30px 20px;
-    line-height: 35px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    outline: none;
-}
-
-#mainmenu li a:after {
-    float: right;
-    position: relative;
-    font-family: "FontAwesome";
-    content: "\f111";
-    font-size: 6px;
-    margin-left: 20px;
-    margin-top: 0px;
-    color: #f7c51e;
-}
-
-#mainmenu li:last-child a:after {
-    display: none;
-}
-
-/* content */
-
-/* proba zrobienia navbara */
-*{
-    box-sizing: border-box;
-}
-
-.navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.brand-title {
-    font-size: 1.5rem;
-    margin-left: .5rem;
-}
-
-.navbar-links {
-    height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    list-style: none;
-    font-size: 2.5rem;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-/* koniec proby */
-
-
-
 
 
 /* ================================================== */
@@ -258,13 +111,7 @@ header.smaller {
     padding-top: 20vh;
 }
 
-
-
 /* end start page */
-
-
-
-
 
 #content {
     width: 100%;
@@ -298,8 +145,8 @@ header.smaller {
     float: left;
 }
 #svgMail{
-    padding-left: 25%;
-    float: left;
+    padding-right: 25%;
+    float: right;
 }
 
 #svgFb{
@@ -356,9 +203,6 @@ textarea {
     font-family: "Arial Bold", Gadget, sans-serif;
     font-weight: 700 !important;
 }
-
-
-
 /* end section contact */
 
 /* section */
@@ -437,10 +281,10 @@ video{
 }
 
 .de-video-container {
-    top: 0%;
-    left: 0%;
-    height: 100%;
+    object-fit: fill;
+    min-height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .de-video-content {
