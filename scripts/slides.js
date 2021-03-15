@@ -1,4 +1,20 @@
 /* jshint esversion: 6 */
+$( document ).ready(function() {
+	$('.trigger').on('click', function() {
+	   $('.modal-wrapper').toggleClass('open');
+	  $('.page-wrapper').toggleClass('blur-it');
+	   return false;
+	});
+  });
+
+  $( document ).ready(function() {
+	var win = $(window);
+	if (win.width() <= 820) {
+	   $('.modal-wrapper').toggleClass('open');
+	  $('.page-wrapper').toggleClass('blur-it');
+	   return false;
+	}
+  });
 
 ((window, document, $, undefined) => {
 
