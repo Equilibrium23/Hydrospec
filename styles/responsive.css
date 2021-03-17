@@ -29,7 +29,10 @@
         text-align: center; 
     }
     #tel{
-        font-size: 10vw;
+        font-size: 15vw !important;
+    }
+    #mail{
+        font-size: 12vw !important;
     }
     /* end contact */
     #svgFb, #svgInst{
