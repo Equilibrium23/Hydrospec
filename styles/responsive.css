@@ -82,9 +82,6 @@
 
 @media only screen and (max-width:495px) {
     /* For mobile phones: */
-    #svgFb, #svgInst{
-        padding-left: 20%;
-    }
     .contactIcons #svgPhone{
         text-align: center;
         width: 100%;
