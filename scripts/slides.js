@@ -9,9 +9,12 @@ $( document ).ready(function() {
 
   $( document ).ready(function() {
 	var win = $(window);
-	   $('.modal-wrapper').toggleClass('open');
-	  $('.page-wrapper').toggleClass('blur-it');
-	   return false;
+	if ($( window ).width() <= 1000)
+	{
+		$('.modal-wrapper').toggleClass('open');
+		$('.page-wrapper').toggleClass('blur-it');
+	}
+	return false;
   });
 
 ((window, document, $, undefined) => {
