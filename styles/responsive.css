@@ -1,44 +1,27 @@
 @media only screen and (max-width:1800px) {
-    /* navbar */
-
-    /* end navbar */
-    #additionalLogo{
+    .companyInfo #full-name{
         display: none;
     }
 }
 
 @media only screen and (max-width:1640px) {
-    /* navbar */
-
-    /* end navbar */
     #svgFb{
         padding-left: 5%;
     }
 }
 
-
-
-
 @media only screen and (max-width:1100px) {
-    /* For mobile phones: */
-    #container{
-        text-align: center;
-    }
-    
     .contactList{
       padding-left: 0%; 
     }
-
+    #home{
+        padding-top: 10vh;
+    }
     /* contact */
-    #mainContact, #mailContact{
+    #contact, #writeMail{
       width:100%;
       padding-bottom: 7vw;
     }
-    /* end contact */
-
-}
-@media only screen and (max-width:820px) {
-    /* For mobile phones: */
     .contactHeader{
         text-align: center; 
     }
@@ -48,14 +31,25 @@
     #tel{
         font-size: 10vw;
     }
-    #svgPhone{
+    /* end contact */
+    #svgFb, #svgInst{
+        padding-left: 20vw;
+    }
+
+}
+@media only screen and (max-width:820px) {
+    /* For mobile phones: */
+    .contactIcons #svgPhone{
         padding-left: 5%;
     }
-    #svgMail{
+    .contactIcons #svgMail{
         padding-right: 5%;
     }
     #covidInfo{
         padding-left: 5%;
+    }
+    #svgFb{
+        padding-left: 5vw;
     }
 }
 
@@ -64,9 +58,10 @@
     #svgFb, #svgInst{
         padding-bottom: 2vh;
         padding-left: 0%;
+        text-align: center;
+        width: 100%;
     }
 }
-
 
 @media only screen and (max-width:575px) {
     /* For mobile phones: */
@@ -75,37 +70,32 @@
     }
 }
 
-
-@media only screen and (max-width:530px) {
+@media only screen and (max-width:550px) {
     /* For mobile phones: */
-    #mainLogo{
+    .companyInfo #name{
         display: none;
     }
-    #logoPicture{
+    .companyInfo #logo{
         width: 90%;
     }
 }
-
 
 @media only screen and (max-width:495px) {
     /* For mobile phones: */
     #svgFb, #svgInst{
         padding-left: 20%;
     }
-    #svgPhone{
+    .contactIcons #svgPhone{
         text-align: center;
         width: 100%;
         padding-left: 0%;
-
     }
-    #svgMail{
+    .contactIcons #svgMail{
         padding-right: 0%;
         width: 100%;
         text-align: center;
     }
-    
 }
-
 
 @media only screen and (max-width:495px) {
     #svgCovid{

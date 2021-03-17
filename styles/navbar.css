@@ -1,3 +1,37 @@
+
+.companyInfo #logo{
+  float: left;
+}
+
+.companyInfo #logo img{
+  padding-top: 1vh;
+  padding-right: 1vw;
+  height: 1vh;
+  width:140px;
+  height: auto;
+}
+
+.companyInfo #name{
+  font-family: 'Signika', sans-serif;
+  color: white;
+  font-size: 70px;
+  padding-top: 3vh;
+  float: left;
+}
+
+.companyInfo #full-name {
+  padding-left: 1vw;
+  float: left;
+  padding-top: 2vh;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+header nav a:hover {
+  color: #555;
+}
+
 nav {
   position: fixed;
   background-color: black;
@@ -8,13 +42,6 @@ nav {
   align-items: center;
   min-height: 12vh;
   font-family: "Poppins", sans-serif;
-}
-
-.logo {
-  color: rgb(226, 226, 226);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
 }
 
 .nav-links {

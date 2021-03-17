@@ -7,16 +7,13 @@
     <meta name="HydrospecWebApp">
     <!-- CSS Files ================================================== -->
     <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="styles/menu-btn.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/responsive.css" type="text/css">
     <link rel="stylesheet" href="styles/colors/violet-blue.css" type="text/css">
     <link rel="stylesheet" href="styles/colors/red.css" type="text/css">
     <link rel="stylesheet" href="styles/buttons.css" type="text/css">
     <link rel="stylesheet" href="styles/navbar.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
     (
         function() 
@@ -27,18 +24,18 @@
     </script>
 </head>
 
-<body id="homepage">
+<body>
     <div id="wrapper">
         <header>
             <nav>
-                <div class="brand-title">
-                    <div id ="logoPicture">
-                        <img src="images/logo3.png" alt=""">
+                <div class = "companyInfo">
+                    <div id ="logo">
+                        <img src="images/logo.png" alt=""">
                     </div>
-                    <div id = mainLogo>
+                    <div id = "name">
                         HydroSpec
                     </div>    
-                    <div id = additionalLogo>
+                    <div id = "full-name">
                         Usługi hydrauliczne i gazownicze <br>
                         Kraków i okolice
                     </div>
@@ -58,10 +55,10 @@
             </nav>
         </header>
         <!-- content begin -->
-        <div id="content" >
-            <section id="section-home" class="relative bg-color text-light" data-stellar-background-ratio=".2">
+        <div id="content">
+            <section id="section-home" class="bg-color text-light">
                 <div id="home">
-                    <div id = "containerStart" class = "vhtop">
+                    <div>
                         <p id="about">
                             Świadczymy usługi hydrauliczne i gazownicze na terenie Krakowa i okolic od 2012 roku. <br>
                             Nasi pracownicy to wyspecjalizowani fachowcy z wieloletnim stażem oraz specjalistyczną wiedzą.<br>
@@ -70,28 +67,28 @@
                         </p>
                         <div class="row">
                             <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                                <div class="de_count">
+                                <div class="counter">
                                     <h3 class="timer" data-to="10" data-speed="1000">0</h3>
                                     <span>Lat na rynku</span>
                                 </div>
                             </div>
     
                             <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                                <div class="de_count">
+                                <div class="counter">
                                     <h3>2000+</h3>
                                     <span>Zadowolonych Klientów</span>
                                 </div>
                             </div>
     
                             <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                                <div class="de_count">
+                                <div class="counter">
                                     <h3>3000+</h3>
                                     <span>Wykonanych zleceń</span>
                                 </div>
                             </div>
     
                             <div class="col-md-3 col-sm-6 col-xs-6 mb-sm-30">
-                                <div class="de_count">
+                                <div class="counter">
                                     <h3 class="timer" data-to="15" data-speed="1000">0</h3>
                                     <span>Lat w zawodzie</span>
                                 </div>
@@ -99,7 +96,7 @@
                         </div>
                         <br>
                         <br>
-                        <div id = "contactIcons">
+                        <div class = "contactIcons">
                             <div id ="svgPhone">
                                 <a href="#section-contact">
                                     <img src="images/phone.svg" alt="" width="200px" height="200px">
@@ -110,7 +107,6 @@
                                     <img src="images/mail.svg" alt="" width="200px" height="200px">
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>  
@@ -118,7 +114,7 @@
             <!-- section close -->
 
             <!-- section begin -->
-            <section id = "section-services" class="no-padding sm-hide">
+            <section id = "section-services" class="no-padding">
                 <div class="de-video-container">
                     <div class="de-video-content">
                             <div id="services">
@@ -157,8 +153,10 @@
                 </div>
             </section>
             <!-- section close -->
+
+            <!-- section begin -->
             <section id="section-covid" class="bg-color2">
-                <div id = "containerCovid">
+                <div>
                     <div id ="svgCovid">
                         <img src="images/covid.svg" alt="" width="200px" height="200px">
                     </div>
@@ -169,50 +167,51 @@
                     </div>
                 </div>
            </section>
+            <!-- section close -->
 
             <!-- section begin -->
             <section id="section-contact" class="bg-color">
-                    <div id = "mainContact">
-                        <ul class = "contactList">
-                            <h2 class ="contactHeader">Skontakuj się z nami:</h2>
-                            <li>Telefon: <br>
-                                <b id ="tel">512 369 119</b>   
-                            </li>
-                            <li>Mail: </li>
-                            <li id ="mailx">hydrospeckr@gmail.com</li>
-                            <br>
-                            <h2 class ="contactHeader">Jesteśmy w social mediach:</h2><br>
-                            <div id ="svgInst">
-                                <a href="https://www.facebook.com/hydrospeckr/" target="blank">
-                                    <img src="images/instagram.svg" alt="" width="200px" height="200px">
-                                </a>
-                            </div>
-                            <div id ="svgFb">
-                                <a href="https://www.instagram.com/hydrospeckrakow/" target="blank">
-                                    <img src="images/fb4.svg" alt="" width="200px" height="200px">
-                                </a>
-                            </div>
-                        </ul>
-                    </div>
-                    <div id = "mailContact">
-                        <form id ="mailForm">
-                            <b class = "validator" id = "nameValidator"></b>
-                            <input required type="text" name="clientName" placeholder="Twoje imie i nazwisko*"><br><br>
-
-                            <b class = "validator" id = "mailValidator"></b>
-                            <input required type="text" name="clientMail" placeholder="Twój Mail*"><br><br>
-
-                            <b class = "validator" id = "telValidator"></b>
-                            <input type="text" name="clientTel" placeholder="Twój nr. Tel (oddzwonimy) "><br><br>
-
-                            <textarea placeholder="Tutaj wpisz treść maila" class="form-control" id="exampleFormControlTextarea1" rows="5" cols="10" name="mailText"></textarea><br>
-                        </form>
-                        <div id = "submitMail">
-                            <button type="button" class="btn btn-primary btn-lg" onclick="sendMail()">Wyślij</button>
+                <div id = "contact">
+                    <ul class = "contactList">
+                        <h2 class ="contactHeader">Skontakuj się z nami:</h2>
+                        <li>Telefon: <br>
+                            <b id ="tel">512 369 119</b>   
+                        </li>
+                        <li>Mail: </li>
+                        <li id ="mail">hydrospeckr@gmail.com</li>
+                        <br>
+                        <h2 class ="contactHeader">Jesteśmy w social mediach:</h2><br>
+                        <div id ="svgInst">
+                            <a href="https://www.instagram.com/hydrospeckrakow/" target="blank">
+                                <img src="images/instagram.svg" alt="" width="200px" height="200px">
+                            </a>
                         </div>
-                        <div class = "validator" id = "sendValidator"></div>
-                        
+                        <div id ="svgFb">
+                            <a href="https://www.facebook.com/hydrospeckr/" target="blank">
+                                <img src="images/fb.svg" alt="" width="200px" height="200px">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div id = "writeMail">
+                    <form id = "mailForm">
+                        <b class = "validator" id = "nameValidator"></b>
+                        <input required type="text" name="clientName" placeholder="Twoje imie i nazwisko*"><br><br>
+
+                        <b class = "validator" id = "mailValidator"></b>
+                        <input required type="text" name="clientMail" placeholder="Twój Mail*"><br><br>
+
+                        <b class = "validator" id = "telValidator"></b>
+                        <input type="text" name="clientTel" placeholder="Twój nr. Tel (oddzwonimy) "><br><br>
+
+                        <textarea placeholder="Tutaj wpisz treść maila" class="form-control" rows="5" cols="10" name="mailText"></textarea><br>
+                    </form>
+                    <div id = "submitMail">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="sendMail()">Wyślij</button>
                     </div>
+                    <div class = "validator" id = "sendValidator"></div>
+                    
+                </div>
                     
                     
             </section>
@@ -228,15 +227,14 @@
 
         <!-- Javascript Files ================================================== -->
         <script src="scripts/jquery.min.js"></script>
-        <script src="scripts/easing.js"></script>
         <script src="scripts/jquery.isotope.min.js"></script>
         <script src="scripts/owl.carousel.js"></script>
-        <script src="scripts/jquery.countTo.js"></script>
         <script src="scripts/wow.min.js"></script>
         <script src="scripts/enquire.min.js"></script>
         <script src="scripts/jquery.magnific-popup.min.js"></script>
         <script src="scripts/designesia.js"></script>
-        <script src="scripts/jquery.stellar.min.js"></script>
+        
+        <script src="scripts/jquery.countTo.js"></script>
         <script src="scripts/slides.js"></script>
         <script src="scripts/mailHandler.js"></script>
         <script src="scripts/navbar.js"></script>
